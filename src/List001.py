@@ -7,7 +7,7 @@ import cv2
 
 #濃淡を反転した画像を生成するために使用する。
 def invert(pixel):
-    return 1 - pixel
+    return 255 - pixel
 
 # グレースケールにしておく
 img = cv2.imread('imgs/miiraku_junior_high.jpg',0)
