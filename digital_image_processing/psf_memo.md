@@ -29,8 +29,16 @@ AttributeError: module 'cv2.cv2' has no attribute 'CV_AA'
 ```
 def defocus_kernel(d, sz=65):
     kern = np.zeros((sz, sz), np.uint8)
-    cv2.circle(kern, (sz, sz), d, 255, -1, cv2.CV_AA, shift=1)
+    cv2.circle(kern, (sz, sz), d, 255, -1, cv2.CV_AA, shift=1) ## ここでエラーが発生
     kern = np.float32(kern) / 255.0
 ```
 - 修正後
-- 
+`cv.CV_AA`を`cv.LINE_AA`に変えることで実行できる。
+
+```
+def defocus_kernel(d, sz=65):
+    kern = np.zeros((sz, sz), np.uint8)
+    cv2.circle(kern, (sz, sz), d, 255, -1, cv2.LINE_AA, shift=1) ##ここを修正する。
+    kern = np.float32(kern) / 255.0
+    return kern
+```
