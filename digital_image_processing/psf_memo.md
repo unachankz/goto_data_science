@@ -42,3 +42,18 @@ def defocus_kernel(d, sz=65):
     kern = np.float32(kern) / 255.0
     return kern
 ```
+
+# Image deblurring
+
+下記のパッケージでもpoint spred functionの実験は可能
+https://pylops.readthedocs.io/en/latest/tutorials/deblurring.html#sphx-glr-tutorials-deblurring-py
+```
+git clone https://github.com/equinor/pylops
+pip install pylops
+
+```
+
+# 参考
+・[Wiener-Filter](https://github.com/tranleanh/Wiener-Filter-image-restoration)
+
+・[Out-of-focus Deblur Filter](https://docs.opencv.org/master/de/d3c/tutorial_out_of_focus_deblur_filter.html)
