@@ -43,6 +43,23 @@ def defocus_kernel(d, sz=65):
     return kern
 ```
 
+＃ImageJ Fiji
+ImageJ Fijiを用いることでconvolution / deconvolutionの実験を行うことができた。
+
+## ImageJ Fiji software Downloads
+1. 私はmac版をdownloadした。
+   [ImageJ](https://imagej.net/Downloads)
+
+2. アプリケーション配下にソフトウェアをコピーする。
+3. Diffraction PSF 3Dのクラスをダウンロードする。
+[Diffraction_PSF_3D.class](http://www.optinav.info/download/Diffraction_PSF_3D.class)
+
+4. Fijiのアプリケーションを右クリックして、「パッケージの内容」を表示を開く。
+5. pluginsの配下にDiffraction_PSF_3D.classをコピーする。
+
+
+
+
 # Image deblurring
 
 下記のパッケージでもpoint spred functionの実験は可能
