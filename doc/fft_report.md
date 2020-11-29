@@ -12,7 +12,7 @@
 * [メディカルAI専門コース オンライン講義資料](https://japan-medical-ai.github.io/medical-ai-course-materials/index.html)
 * [医療AIとディープラーニングシリーズ Pythonによる医用画像処理入門](https://www.ohmsha.co.jp/book/9784274225468/)
 * [フーリエ変換と画像圧縮](https://www.slideshare.net/ginrou799/ss-46355460)
-
+* [画像情報処理](http://racco.mikeneko.jp/Kougi/2019a/IPPR/)
 
 # メモ
 ## ２次元フーリエ変換
